@@ -20,11 +20,25 @@ html, body {
     background-attachment: scroll;
 }
 
-.video-frame {
-    position: relative;
-    top: 90px;
-    left: 615px;
-    width: 740px;
-    height: 590px;
-    border-radius: 5px;
+@media only screen and (max-width: 1920px) {
+    .video-frame {
+        position: relative;
+        top: 90px;
+        left: 615px;
+        width: 740px;
+        height: 590px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust layout for smaller Android phones */
+    .video-frame {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        width: 600px;
+        height: 330px;
+        border-radius: 5px;
+    }
 }
